@@ -9,20 +9,20 @@
 <header class="page-header">
   <nav class="navigation">
     <a class="navigation-logo" href="index.html">
-      <img class="pageheader-logo" alt="Логотип сайта Седона" src="">
+      <img class="page-header-logo" alt="Логотип сайта Седона" src="#">
     </a>
-    <ul class="navigaion-list">
+    <ul class="navigation-list">
       <li class="navigation-item">
-        <a class="navigation-link" href="about.html">Главная</a>
+        <a class="navigation-link" href="index.html">Главная</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="about.html">О Седоне</a>
+        <a class="navigation-link" href="#">О Седоне</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
       </li>
     </ul>
-    <ul class="navigaion-user">
+    <ul class="navigation-user">
       <li class="navigation-item">
         <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
       </li>
@@ -103,7 +103,7 @@
       <button class="button" type="submit">Применить</button>
       <button class="button" type="submit">Сбросить</button>
     </form>
-    <p>Найдено гостиниц: 38</p>
+    <p class="search-result">Найдено гостиниц: 38</p>
     <select class="select-control" aria-label="Сортировка">
       <option value="cheap">Сначала дешевые</option>
       <option value="expensive">Сначала дорогие</option>
@@ -121,72 +121,44 @@
     <ul class="hotel-card">
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="" alt="Amara Resort&Spa">
-          <h3>Amara Resort&Spa</h3>
+          <img class="hotel-card-image" src="#" alt="Достопримечательности рядом с Amara Resort&Spa" width="300px" height="211px">
+          <h3 class="hotel-card-title">Amara Resort&Spa</h3>
         </a>
-        <p>Гостиница</p>
-        <p>от 4000 ₽</p>
+        <p class="hotel-card-type">Гостиница</p>
+        <p class="hotel-card-price">от 4000 ₽</p>
         <a class="hotel-card-button button" href="#">Подробнее</a>
         <button type=submit class="hotel-card-button button">В избранное</button>
-        <div class="rating-area">
-          <input type="radio" id="star-4" name="rating" value="4">
-          <label for="star-4" title="Оценка 4"></label>
-          <input type="radio" id="star-3" name="rating" value="3">
-          <label for="star-3" title="Оценка 3"></label>
-          <input type="radio" id="star-2" name="rating" value="2">
-          <label for="star-2" title="Оценка 2"></label>
-          <input type="radio" id="star-1" name="rating" value="1">
-          <label for="star-1" title="Оценка 1"></label>
-        </div>
         <span class="hotel-rating">Рейтинг: 8,5</span>
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="" alt="Villas at Poco Diablo">
-          <h3>Villas at Poco Diablo</h3>
+          <img class="hotel-card-image" src="#" alt="Достопримечательности рядом с Villas at Poco Diablo" width="300px" height="211px">
+          <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
         </a>
-        <p>Гостиница</p>
-        <p>от 5000 ₽</p>
+        <p class="hotel-card-type">Гостиница</p>
+        <p class="hotel-card-price">от 5000 ₽</p>
         <a class="hotel-card-button button" href="#">Подробнее</a>
         <button type=submit class="hotel-card-button button">В избранное</button>
-        <div class="rating-area">
-          <input type="radio" id="star-4" name="rating" value="4">
-          <label for="star-4" title="Оценка 4"></label>
-          <input type="radio" id="star-3" name="rating" value="3">
-          <label for="star-3" title="Оценка 3"></label>
-          <input type="radio" id="star-2" name="rating" value="2">
-          <label for="star-2" title="Оценка 2"></label>
-          <input type="radio" id="star-1" name="rating" value="1">
-          <label for="star-1" title="Оценка 1"></label>
-        </div>
         <span class="hotel-rating">Рейтинг: 9,2</span>
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="" alt="Desert Quail Inn">
-          <h3>Desert Quail Inn</h3>
+          <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
+          <h3 class="hotel-card-title">Desert Quail Inn</h3>
         </a>
-        <p>Гостиница</p>
-        <p>от 2500 ₽</p>
+        <p class="hotel-card-type">Гостиница</p>
+        <p class="hotel-card-price">от 2500 ₽</p>
         <a class="hotel-card-button button" href="#">Подробнее</a>
         <button type=submit class="hotel-card-button button">В избранное</button>
-        <div class="rating-area">
-          <input type="radio" id="star-3" name="rating" value="3">
-          <label for="star-3" title="Оценка 3"></label>
-          <input type="radio" id="star-2" name="rating" value="2">
-          <label for="star-2" title="Оценка 2"></label>
-          <input type="radio" id="star-1" name="rating" value="1">
-          <label for="star-1" title="Оценка 1"></label>
-        </div>
         <span class="hotel-rating">Рейтинг: 6,9</span>
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="" alt="GreenTree Inn">
-          <h3>GreenTree Inn</h3>
+          <img class="hotel-card-image" src="#" alt="Достопримечательности рядом с GreenTree Inn" width="300px" height="211px">
+          <h3 class="hotel-card-title">GreenTree Inn</h3>
         </a>
-        <p>Гостиница</p>
-        <p>от 1500 ₽</p>
+        <p class="hotel-card-type">Гостиница</p>
+        <p class="hotel-card-price">от 1500 ₽</p>
         <a class="hotel-card-button button" href="#">Подробнее</a>
         <button type=submit class="hotel-card-button button">В избранное</button>
         <div class="rating-area">
@@ -224,7 +196,7 @@
         <option>1</option>
         <option>2</option>
         <option>3</option>
-        <option checked>4</option>
+        <option selected>4</option>
       </select>
     </section>
   </section>
@@ -252,7 +224,7 @@
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://youtube.com/user/htmlacademy">
+        <a class="link" href="https://youtube.com/user/htmlacademy">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
@@ -260,7 +232,7 @@
   </section>
   <section class="footer-phone">
     <h2 class="visually-hidden">Номер телефона</h2>
-    <a class="footer-phone-number" href="tel: +78128121212">+7 812 812 12 12</a>
+    <a class="footer-phone-number" href="tel:+78128121212">+7 812 812 12 12</a>
     <p class="about text"><a class="htmlacademy-link" href="http://htmlacademy.ru">.html academy</a></p>
   </section>
 </footer>
