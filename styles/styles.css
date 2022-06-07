@@ -1,3 +1,6 @@
+/*Общий комментарий. После этого раздела у тебя должны совпадать с макетом все параметры шрифта (жирность, размер, высота строки, цвет, text-transform, text-decoration, выравнивание и т.д. кароч),
+фоновые цвета, большие декоративные изображения*/
+/*Сейчас шрифты и фоновые цвета во многих местах отличаются от макета*/
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -13,23 +16,6 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
-
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -43,8 +29,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -83,7 +68,6 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -141,7 +125,6 @@ body {
 }
 
 .breadcrumbs-link {
-  font-family: "PT Sans", sans-serif;
   line-height: 26px;
   color: #FFFFFF;
   font-weight: 700;
@@ -186,6 +169,7 @@ body {
 .pagination {
   color: #FFFFFF;
   background-color: #000000;
+  text-decoration: none;
 }
 
 .newsletter-inner {
