@@ -18,7 +18,7 @@
 }
 
 html {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -31,6 +31,7 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #FFFFFF;
+  width: 1200px;
 }
 
 .button {
@@ -54,9 +55,9 @@ body {
 }
 
 .navigation-list {
+  width: 250px;
   margin: 0;
   padding: 0;
-  width: 250px;
 }
 
 .navigation-link {
@@ -75,6 +76,14 @@ body {
   margin-top: auto; <!-- уточнить -->
 }
 
+.city-title {
+  text-align: center;
+}
+
+.city-advantages {
+  text-align: center;
+}
+
 .main-container {
   display: flex;
 }
@@ -91,7 +100,7 @@ body {
 
 .page-container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .logo {
@@ -105,15 +114,49 @@ body {
 }
 
 .advantages-list {
+  list-style: none;
   text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  background-color: #82B3D3;
+  width: 400px;
+}
+
+
+.advantages-item--blue {
+  background-color: #82B3D3;
+  display: flex;
+}
+
+.advantages-item-text {
+  width: 400px;
+}
+
+.advantages-item--reverse .advantages-item-wrapper {
+  flex-direction: row-reverse;
+}
+
+.advantages-item-wrapper {
+  display: flex;
 }
 
 .advantages-item {
-  width: 400px;
+  width: 100%;
+}
+
+.advantages-item--33 {
+  width: 33.3333%;
+}
+
+.advantages-sublist {
+  display: flex;
+  list-style: none;
+  background-color: #ffffff;
 }
 
 .advantages-title {
@@ -130,6 +173,8 @@ body {
 .appointment {
   color: #000000;
   background-color: #FFFFFF;
+  text-align: center;
+
 }
 
 .appointment-title {
@@ -149,10 +194,18 @@ body {
   text-align: center;
 }
 
-.footer-social-item {
+.page-footer {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
   background-color: #FFFFFF;
   color: #000000;
   text-decoration: none;
+  display: flex;
+  margin-left: 82px;
 }
 
 .footer-phone-number {
@@ -164,6 +217,7 @@ body {
   text-align: center;
   background-color: #FFFFFF;
   text-decoration: none;
+
 }
 
 .main-filter {
@@ -192,6 +246,7 @@ body {
 
 .hotel-card {
   background-color: #FFFFFF;
+  display: block;
 }
 
 .hotel-card-link {
@@ -216,9 +271,28 @@ body {
 }
 
 .pagination {
+  display: flex;
   color: #FFFFFF;
-  background-color: #000000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item + .pagination-item {
+  margin-left: 8px;
+}
+
+.pagination-link {
+  width: 60px;
+  height: 60px;
+  background: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  color: #fff;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .newsletter-inner {
