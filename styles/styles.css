@@ -130,7 +130,6 @@ body {
 
 .advantages-item--blue {
   background-color: #82B3D3;
-  display: flex;
 }
 
 .advantages-item-text {
@@ -196,16 +195,20 @@ body {
 
 .page-footer {
   display: flex;
+  align-items: center;
   width: 1060px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .footer-social-list {
-  background-color: #FFFFFF;
   color: #000000;
   text-decoration: none;
   display: flex;
-  margin-left: 82px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
 }
 
 .footer-phone-number {
@@ -217,7 +220,14 @@ body {
   text-align: center;
   background-color: #FFFFFF;
   text-decoration: none;
+  margin-left: 250px;
+  flex-shrink: 0;
 
+
+}
+
+.htmlacademy-link {
+  margin-left: 235px;
 }
 
 .main-filter {
@@ -298,4 +308,34 @@ body {
 .newsletter-inner {
   background-color: #FFFFFF;
   text-align: center;
+}
+
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-wrapper .button {
+  display: block;
+}
+
+.catalog-filter-prices {
+  display: flex;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
+.catalog-filter-price {
+  width: 143px;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-filter-price + .catalog-filter-price {
+  border-left: 2px solid #ffffff;
+}
+
+.catalog-filter-price-input {
+  display: block;
+  width: 100%;
 }
