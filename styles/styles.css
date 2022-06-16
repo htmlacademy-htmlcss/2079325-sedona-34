@@ -34,6 +34,7 @@ body {
   width: 1200px;
 }
 
+
 .button {
   font-family: inherit;
   font-weight: 700;
@@ -50,17 +51,20 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
 }
 
 .navigation-list {
-  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
   color: #000000;
@@ -71,17 +75,32 @@ body {
 }
 
 .navigation-user {
-  max-width: 170px;
-  margin-left: auto;
-  margin-top: auto; <!-- уточнить -->
+  margin: 0 auto;
+}
+
+.navigation-item {
+  padding-left: 34px;
+}
+
+.logo-icon {
+  width: 139px;
+
 }
 
 .city-title {
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 63px;
+  margin-bottom: 31px;
+  line-height: 36px;
 }
 
 .city-advantages {
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 90px;
 }
 
 .main-container {
@@ -105,7 +124,9 @@ body {
 
 .logo {
   display: block;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 52px;
+  padding-bottom: 83px;
 }
 
 
@@ -173,6 +194,8 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   text-align: center;
+  width: 1200px;
+  height: 417px;
 
 }
 
@@ -180,6 +203,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding-bottom: 29px;
+  padding-top: 91px;
+}
+
+.appointment-description {
+  padding-bottom: 46px;
 }
 
 .newsletter {
@@ -195,6 +224,12 @@ body {
 
 .newsletter-title {
   text-transform: uppercase;
+  padding-top: 94px;
+  padding-bottom: 29px;
+}
+
+.newsletter-form {
+  padding-bottom: 94px;
 }
 
 .page-footer {

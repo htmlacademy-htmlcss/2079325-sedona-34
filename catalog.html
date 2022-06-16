@@ -22,7 +22,7 @@
         <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
       </li>
     </ul>
-    <ul class="navigation-user">
+    <ul class="navigation-list navigation-user">
       <li class="navigation-item">
         <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
       </li>
@@ -55,20 +55,20 @@
           <legend class="catalog-filter-title">Инфраструктура</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
-              <input class="control-input" type="checkbox" name="pool" checked>
-              <label class="control">
+              <input class="control-input" type="checkbox" name="pool" checked id="checkbox-pool">
+              <label class="control" for="checkbox-pool">
                 Бассейн
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="checkbox" name="parking" checked>
-              <label class="control">
+              <input class="control-input" type="checkbox" name="parking" checked id="checkbox-parking">
+              <label class="control" for="checkbox-parking">
                 Парковка
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="checkbox" name="wi-fi">
-              <label class="control">
+              <input class="control-input" type="checkbox" name="wi-fi" id="checkbox-wi-fi">
+              <label class="control" for="checkbox-wi-fi">
                 Wi-Fi
               </label>
             </li>
@@ -78,20 +78,20 @@
           <legend class="catalog-filter-title">Тип жилья</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
-              <input class="control-input" id="checkbox-1" type="radio" name="accomodation" value="hotel" checked>
-              <label class="control" for="checkbox-1">
+              <input class="control-input" type="radio" name="accomodation" value="hotel" id="radio-hotel" checked>
+              <label class="control" for="radio-hotel">
                 Гостиница
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="radio" name="accomodation" value="motel">
-              <label class="control">
+              <input class="control-input" type="radio" name="accomodation" value="motel" id="radio-motel">
+              <label class="control" for="radio-motel">
                 Мотель
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="radio" name="accomodation" value="apartment">
-              <label class="control">
+              <input class="control-input" type="radio" name="accomodation" value="apartment" id="radio-apart">
+              <label class="control" for="radio-apart">
                 Апартаменты
               </label>
             </li>
