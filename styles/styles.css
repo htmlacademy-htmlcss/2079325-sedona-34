@@ -84,6 +84,15 @@ body {
   padding-left: 34px;
 }
 
+.wanted {
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+  background-color: #756157;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 .logo-icon {
   width: 139px;
 
@@ -338,7 +347,17 @@ body {
   border: 0;
 }
 
+.catalog-infrastructure {
+  margin-right: 70px;
+}
 
+.catalog-type-acc {
+  margin-right: 175px;
+}
+
+.catalog-price {
+  margin-right: 70px;
+}
 
 .catalog-filter-title {
   font-weight: 700;
@@ -378,21 +397,26 @@ body {
   list-style: none;
   padding: 20px;
   width: 340px;
-
 }
 
-.hotel-card-link {
+.hotel-card-title a {
+  font-weight: 700;
   text-decoration: none;
+  color: #000000;
 }
 
 .hotel-card-title {
-  font-weight: 700;
-  color: #000000;
+  margin: 16px 0;
+
 }
 
 .hotel-card-type {
   font-weight: 400;
   color: #333333;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  width: 140px;
 }
 
 .hotel-card-price {
@@ -400,7 +424,61 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  width: 140px;
 }
+
+.hotel-and-price {
+  display: flex;
+  align-items: center;
+  height: 21px;
+  margin-bottom: 16px;
+}
+
+.more {
+  display: flex;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.button-else {
+  margin-right: 20px;
+  width: 140px;
+  background-color: #756157;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 9px 15px;
+  font-size: 16px;
+
+}
+
+.button-fav {
+  width: 140px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  padding: 9px 15px 8px;
+  font-size: 16px;
+}
+
+.rate {
+  display: flex;
+}
+
+.stars {
+  display: flex;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.hotel-rating {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 9px 22px 8px 23px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+
 
 .pagination {
   width: 1056px;
@@ -434,6 +512,11 @@ body {
 
 .hotel-amount {
   display: flex;
+}
+
+.hotel-page {
+  width: 175px;
+  font-size: 18px;
 }
 
 .newsletter-inner {
@@ -511,10 +594,12 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 411px;
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.newsletter-title-inner{
+.newsletter-title-inner {
   text-transform: uppercase;
+  margin-bottom: 29px;
 }
