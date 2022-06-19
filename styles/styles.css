@@ -163,11 +163,8 @@ body {
 }
 
 .advantages-item-text {
-  padding: 0;
-  margin-top: 92px;
-  margin-right: 85px;
-  margin-left: 85px;
-  margin-bottom: 92px;
+  margin: 0;
+  padding: 92px 85px;
   font-size: 18px;
   width: 400px;
   color: #ffffff;
@@ -195,7 +192,9 @@ body {
 }
 
 .advantages-item-beautiful-road {
+  padding: 103px 85px;
   background-color: rgba(131, 179, 211, 0.2);
+
 }
 
 .advantages-sublist {
@@ -205,6 +204,8 @@ body {
 }
 
 .advantages-title {
+  padding: 0;
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
