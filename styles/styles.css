@@ -192,7 +192,7 @@ body {
 }
 
 .advantages-item-beautiful-road {
-  padding: 103px 85px;
+  padding: 80px 85px;
   background-color: rgba(131, 179, 211, 0.2);
 
 }
@@ -201,6 +201,7 @@ body {
   display: flex;
   list-style: none;
   background-color: #ffffff;
+  padding: 0;
 }
 
 .advantages-title {
@@ -238,6 +239,17 @@ body {
   padding-bottom: 46px;
 }
 
+.hotel-search-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #FFFFFF;
+  padding: 12px 15px;
+  width: 574px;
+  border-radius: 4px;
+
+}
+
 .newsletter {
   background-image: url("../images/footer-background.jpg");
   background-color: #000000;
@@ -253,6 +265,10 @@ body {
 .newsletter-title {
   text-transform: uppercase;
   margin-bottom: 29px;
+}
+
+.subscription {
+
 }
 
 .page-footer {
