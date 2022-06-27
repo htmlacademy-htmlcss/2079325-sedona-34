@@ -8,7 +8,7 @@
 <body>
 <header class="page-header">
   <nav class="navigation">
-    <a class="page-logo">
+    <a class="page-logo" href="index.html">
       <img class="logo-icon" src="images/logo-city-of-sedona.svg" width="139" height="70" alt="Логотип Седоны">
     </a>
     <ul class="navigation-list">
@@ -24,10 +24,13 @@
     </ul>
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span>
+          <img class="navigation-link-search" src="images/icons/icon-search.svg" alt="Иконка поиска"></a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span>
+          <img class="navigation-link-favorite" src="images/icons/icon-favorite.svg" alt="Иконка избранное">
+        </a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link wanted" href="#">Хочу сюда!</a>
@@ -41,7 +44,9 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link visually-hidden" href="index.html">Главная страница</a>
+          <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная страница</span>
+            <img class="breadcrumbs-link-home-page" src="images/icons/icon-home-page.svg" alt="Иконка домой" width="12" height="12">
+          </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -117,8 +122,8 @@
           </div>
         </fieldset>
         <div class="catalog-filter-wrapper">
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="reset">Сбросить</button>
+          <button class="button-filter-submit" type="submit">Применить</button>
+          <button class="button-filter-reset" type="reset">Сбросить</button>
         </div>
       </form>
     </section>
@@ -137,12 +142,15 @@
     <div class="page-view">
       <a href="#" class="button button-dark">
         <span class="visually-hidden">Показать карточки</span>
+        <img src="images/icons/icon-table.svg" width="16" height="14" alt="Показать карточки">
       </a>
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать каждую карточку отдельно</span>
+        <img src="images/icons/icon-slideshow.svg" width="16" height="14" alt="Показать каждую карточку отдельно">
       </a>
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
+        <img src="images/icons/icon-list.svg" width="16" height="14" alt="Показать список отелей">
       </a>
     </div>
   </section>
@@ -164,10 +172,10 @@
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 8,5</span>
         </div>
@@ -175,9 +183,8 @@
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
           <img class="hotel-card-image" src="images/villas-at-poco-diablo.jpg"
-               alt="Достопримечательности рядом с Villas at Poco Diablo" width="300" height="211">
+               alt="Достопримечательности рядом с Villas at Poco Diablo" width="300" height="211"></a>
           <h3 class="hotel-card-title"><a href="#">Villas at Poco Diablo</a></h3>
-        </a>
         <div class="hotel-and-price">
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 5000 ₽</p>
@@ -188,10 +195,10 @@
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 9,2</span>
         </div>
@@ -212,9 +219,9 @@
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 6,9</span>
         </div>
@@ -222,9 +229,8 @@
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
           <img class="hotel-card-image" src="images/geentree-inn.jpg" alt="Достопримечательности рядом с GreenTree Inn"
-               width="300" height="211">
+               width="300" height="211"></a>
           <h3 class="hotel-card-title"><a href="#">GreenTree Inn</a></h3>
-        </a>
         <div class="hotel-and-price">
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 1500 ₽</p>
@@ -235,10 +241,10 @@
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
-            <div class="star"><img src="../images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 5,0</span>
         </div>
@@ -269,7 +275,7 @@
     </ul>
     <div class="hotel-amount">
       <label class="hotel-page">Гостиниц на странице:</label>
-        <select>
+        <select class="hotel-page-amount">
           <option label="1">1</option>
           <option label="2">2</option>
           <option label="3">3</option>
@@ -280,30 +286,33 @@
 
 </main>
 <section class="newsletter-inner">
-  <h2 class="newsletter-title-inner">Подпишитесь на рассылку</h2>
-  <p>Только полезная информации и никакого спама,<br> честное бойскаутское!</p>
-  <div class="email-info">
-    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label for="newsletter-email">Email</label>
-      <input type="email" class="field" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" required>
-      <button class="button newsletter-button" type="submit">Подписаться</button>
-    </form>
-  </div>
-</section>
+    <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+    <p class="newsletter-description">Только полезная информации и никакого спама,<br> честное бойскаутское!</p>
+    <div class="subscription">
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <input type="email" class="newsletter-email-field newsletter-email-field-inner" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" required>
+        <button class="button newsletter-button" type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
 <footer class="page-footer">
   <ul class="footer-social-list">
     <li class="footer-social-item">
-      <a class="social-network-link" href="https://vk.com/htmlacademy">
+      <a class="social-network-link" href="https://vk.com/htmlacademy"><img src="images/icons/icon-vkontakte.svg" width="24"
+                                                                            height="14" alt="Логотип вконтакте">
         <span class="visually-hidden">ВКонтакте</span>
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="social-network-link" href="https://t.me/htmlacademy">
+      <a class="social-network-link" href="https://t.me/htmlacademy"><img src="images/icons/icon-telegram.svg" width="18"
+                                                                          height="16" alt="Логотип телеграм">
         <span class="visually-hidden">Телеграм</span>
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="social-network-link" href="https://youtube.com/user/htmlacademy">
+      <a class="social-network-link" href="https://youtube.com/user/htmlacademy"><img src="images/icons/icon-youtube.svg" width="22"
+                                                                                      height="17" alt="Логотип Youtube">
         <span class="visually-hidden">YouTube</span>
       </a>
     </li>
