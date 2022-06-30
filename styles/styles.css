@@ -103,6 +103,7 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 16px;
+  align-content: center;
 }
 
 .logo-icon {
@@ -443,12 +444,15 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .catalog-filter-wrapper {
   display: table;
   margin: 0 auto;
-  padding: 0;
+
 }
 
 .button-filter-submit {
@@ -504,6 +508,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.button-card {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 17px 16px;
+}
+
+.button-each-card {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 17px 16px;
+}
+
+.button-list {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 17px 16px;
+}
+
+
+
 
 .hotel-wrapper {
   display: flex;
@@ -646,7 +671,7 @@ body {
 }
 
 .hotel-page-amount {
-  weight: 160px;
+  margin: 5px 71px 5px 51px;
 }
 
 
