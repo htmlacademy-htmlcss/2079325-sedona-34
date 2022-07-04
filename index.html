@@ -30,6 +30,7 @@
       <li class="navigation-item">
         <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span>
           <img class="navigation-link favorite" src="images/icons/icon-favorite.svg" alt="Иконка избранное"></a>
+        <span class="number-favorite favorite">12</span>
       </li>
       <li class="navigation-item">
         <a class="navigation-link wanted" href="#">Хочу сюда!</a>
@@ -62,17 +63,17 @@
           </div>
           <ul class="advantages-sublist">
             <li class="advantages-item advantages-item--33 advantages-item-light-blue">
-              <img class="image" src="images/icons/icon-house.svg" width="75" height="72" alt="Картинка домика">
+              <img class="advantages-icon" src="images/icons/icon-house.svg" width="75" height="72" alt="Картинка домика">
               <h4 class="advantages-title">Жильё</h4>
               <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="advantages-item advantages-item--33">
-              <img src="images/icons/icon-food.svg" width="74" height="70" alt="Картинка бургера">
+              <img class="advantages-icon" src="images/icons/icon-food.svg" width="74" height="70" alt="Картинка бургера">
               <h4 class="advantages-title">Еда</h4>
               <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item advantages-item--33 advantages-item-light-blue">
-              <img src="images/icons/icon-souvenir.svg" width="64" height="76" alt="Картинка подарка">
+              <img class="advantages-icon" src="images/icons/icon-souvenir.svg" width="64" height="76" alt="Картинка подарка">
               <h4 class="advantages-title">Сувениры</h4>
               <p class="advantages-description">Не только китайского, но и настоящего местного производства</p>
             </li>
@@ -153,5 +154,52 @@
   <a class="htmlacademy-link" href="https://htmlacademy.ru"><img src="images/html-academy-logo.svg" width="115"
                                                                  height="33" alt="Логотип HTML Академии"></a>
 </footer>
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-info">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="info-form" action="https://echo.htmlacademy.ru/" method="get">
+        <p class="field-group">
+          <label class="first-date" for="first-date">Дата Заезда:</label>
+          <input class="info-form-field field" id="first-date" name="info-date" placeholder="27 апреля 2020">
+          <span class="fist-date-comment">Мы не можем отправить вас в прошлое.</span>
+        </p>
+        <p class="field-group">
+          <label class="last-date" for="last-date">Дата Выезда:</label>
+          <input class="info-form-field field" id="last-date" name="info-date" placeholder="27 апреля 2020">
+        </p>
+        <p class="field-group">
+          <label class="adults-amount">Взрослые:
+          <button class="plus-btn" type="button" name="button">
+            <img src="/images/plus.svg">
+          </button>
+          <input type="text" name="name" value="2">
+          <button class="minus-btn" type="button" name="button">
+            <img src="/images/minus.svg">
+          </button>
+          </label>
+        </p>
+        <p class="field-group">
+          <label class="adults-amount">Дети:
+            <button class="plus-btn" type="button" name="button">
+              <img src="/images/plus.svg">
+            </button>
+            <input type="text" name="name" value="2">
+            <button class="minus-btn" type="button" name="button">
+              <img src="/images/minus.svg">
+            </button>
+          </label>
+        </p>
+        <button class="button info-form-button" type="submit">Найти</button>
+      </form>
+    </section>
+    </div>
+
+
+  </div>
 </body>
 </html>

@@ -30,6 +30,7 @@
       <li class="navigation-item">
         <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span>
           <img class="navigation-link favorite" src="images/icons/icon-favorite.svg" alt="Иконка избранное">
+          <span class="number-favorite favorite">12</span>
         </a>
       </li>
       <li class="navigation-item">
@@ -60,21 +61,24 @@
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
-              <input class="control-input" type="checkbox" name="pool" checked id="checkbox-pool">
-              <label class="control" for="checkbox-pool">
-                Бассейн
+              <label class="control">
+              <input class="visually hidden control-input" type="checkbox" name="pool" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="checkbox" name="parking" checked id="checkbox-parking">
-              <label class="control" for="checkbox-parking">
-                Парковка
+              <label class="control">
+              <input class="visually hidden control-input" type="checkbox" name="parking" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="checkbox" name="wi-fi" id="checkbox-wi-fi">
-              <label class="control" for="checkbox-wi-fi">
-                Wi-Fi
+              <label class="control">
+              <input class="visually hidden control-input" type="checkbox" name="wi-fi">
+                <span class="control-mark"></span>
+                <span class="control-label">Wi-Fi</span>
               </label>
             </li>
           </ul>
@@ -83,21 +87,24 @@
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
-              <input class="control-input" type="radio" name="accomodation" value="hotel" id="radio-hotel" checked>
-              <label class="control" for="radio-hotel">
-                Гостиница
+              <label class="control">
+              <input class="visually hidden control-input" type="radio" name="accommodation" value="hotel" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="radio" name="accomodation" value="motel" id="radio-motel">
-              <label class="control" for="radio-motel">
-                Мотель
+              <label class="control">
+              <input class="visually hidden control-input" type="radio" name="accommodation" value="motel">
+                <span class="control-mark"></span>
+                <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter-item">
-              <input class="control-input" type="radio" name="accomodation" value="apartment" id="radio-apart">
-              <label class="control" for="radio-apart">
-                Апартаменты
+              <label class="control">
+              <input class="visually hidden control-input" type="radio" name="accommodation" value="apartment">
+                <span class="control-mark"></span>
+                <span class="control-label">Апартаменты</span>
               </label>
             </li>
           </ul>
@@ -106,11 +113,13 @@
           <legend class="catalog-filter-title">Стоимость,₽:</legend>
           <div class="catalog-filter-prices">
             <div class="catalog-filter-price">
+              <span class="catalog-filter-price-min">0</span>
               <input type="text" id="min" class="catalog-filter-price-input">
               <label for="min" class="catalog-filter-price-label">от</label>
             </div>
 
             <div class="catalog-filter-price">
+              <span class="catalog-filter-price-max">9000</span>
               <input type="text" id="max" class="catalog-filter-price-input">
               <label for="max" class="catalog-filter-price-label">до</label>
             </div>
@@ -140,15 +149,15 @@
       </select>
     </div>
     <div class="page-view">
-      <a href="#" class="button button-card">
+      <a href="#" class="button button-view button-view-selected">
         <span class="visually-hidden">Показать карточки</span>
         <img src="images/icons/icon-table.svg" width="16" height="14" alt="Показать карточки">
       </a>
-      <a href="#" class="button button-each-card">
+      <a href="#" class="button button-view">
         <span class="visually-hidden">Показать каждую карточку отдельно</span>
         <img src="images/icons/icon-slideshow.svg" width="16" height="14" alt="Показать каждую карточку отдельно">
       </a>
-      <a href="#" class="button button-list">
+      <a href="#" class="button button-view">
         <span class="visually-hidden">Показать список</span>
         <img src="images/icons/icon-list.svg" width="16" height="14" alt="Показать список отелей">
       </a>
