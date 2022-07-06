@@ -12,14 +12,14 @@
       <img class="logo-icon" src="images/logo-city-of-sedona.svg" width="139" height="70" alt="Логотип Седоны">
     </a>
     <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="index.html">Главная</a>
+      <li class="navigation-item menu-item">
+        <a class="navigation-link menu-link" href="index.html">Главная</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">О Седоне</a>
+        <a class="navigation-link menu-link" href="#">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+        <a class="navigation-link navigation-link-current menu-link menu-link-current" href="catalog.html">Гостиницы</a>
       </li>
     </ul>
     <ul class="navigation-list navigation-user">
@@ -62,22 +62,22 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="visually hidden control-input" type="checkbox" name="pool" checked>
-                <span class="control-mark"></span>
+              <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                <span class="control-mark control-mark--square"></span>
                 <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="visually hidden control-input" type="checkbox" name="parking" checked>
-                <span class="control-mark"></span>
+              <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                <span class="control-mark control-mark--square"></span>
                 <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="visually hidden control-input" type="checkbox" name="wi-fi">
-                <span class="control-mark"></span>
+              <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                <span class="control-mark control-mark--square"></span>
                 <span class="control-label">Wi-Fi</span>
               </label>
             </li>
@@ -88,22 +88,22 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="visually hidden control-input" type="radio" name="accommodation" value="hotel" checked>
-                <span class="control-mark"></span>
+              <input class="visually-hidden control-input" type="radio" name="accommodation" value="hotel" checked>
+                <span class="control-mark control-mark--round"></span>
                 <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="visually hidden control-input" type="radio" name="accommodation" value="motel">
-                <span class="control-mark"></span>
+              <input class="visually-hidden control-input" type="radio" name="accommodation" value="motel">
+                <span class="control-mark control-mark--round"></span>
                 <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="visually hidden control-input" type="radio" name="accommodation" value="apartment">
-                <span class="control-mark"></span>
+              <input class="visually-hidden control-input" type="radio" name="accommodation" value="apartment">
+                <span class="control-mark control-mark--round"></span>
                 <span class="control-label">Апартаменты</span>
               </label>
             </li>
@@ -113,14 +113,12 @@
           <legend class="catalog-filter-title">Стоимость,₽:</legend>
           <div class="catalog-filter-prices">
             <div class="catalog-filter-price">
-              <span class="catalog-filter-price-min">0</span>
-              <input type="text" id="min" class="catalog-filter-price-input">
+              <input type="text" id="min" class="catalog-filter-price-input" value="0">
               <label for="min" class="catalog-filter-price-label">от</label>
             </div>
 
             <div class="catalog-filter-price">
-              <span class="catalog-filter-price-max">9000</span>
-              <input type="text" id="max" class="catalog-filter-price-input">
+              <input type="text" id="max" class="catalog-filter-price-input" value="9000">
               <label for="max" class="catalog-filter-price-label">до</label>
             </div>
           </div>
@@ -181,10 +179,10 @@
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 8,5</span>
         </div>
@@ -200,14 +198,14 @@
         </div>
         <div class="more">
           <a class="hotel-card-button button button-else" href="#">Подробнее</a>
-          <a href="#" class="hotel-card-button button button-fav">В избранное</a>
+          <a href="#" class="hotel-card-button button button-fav button-fav-current">В избранном</a>
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 9,2</span>
         </div>
@@ -228,9 +226,9 @@
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 6,9</span>
         </div>
@@ -250,10 +248,10 @@
         </div>
         <div class="rate">
           <div class="stars">
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
-            <div class="star"><img src="images/icons/icon-star.svg"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
+            <div class="star"><img src="images/icons/icon-star.svg" alt="Рейтинг"></div>
           </div>
           <span class="hotel-rating">Рейтинг: 5,0</span>
         </div>
