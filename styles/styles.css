@@ -592,6 +592,10 @@ body {
   display: block;
 }
 
+.catalog-filter-item {
+  margin-bottom: 15px;
+}
+
 .control {
   position: relative;
   display: block;
@@ -620,18 +624,17 @@ body {
   display: block;
 }
 
-.control-input[type="checkbox"]:checked + control-mark--square::before {
+.control-input[type="checkbox"]:checked + .control-mark--square::before {
   content: "";
   position: absolute;
   background-image: url("../images/icons/icon-tick.svg");
-  background-color: #3F5E72;
   width: 12px;
   height: 10px;
   top: 5px;
   left: 4px;
 }
 
-.control-input[type="radio"]:checked + control-mark--round::before {
+.control-input[type="radio"]:checked + .control-mark--round::before {
   content: "";
   position: absolute;
   background-color: #3F5E72;
@@ -783,6 +786,7 @@ body {
   background-image: url("../images/selector-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  padding-left: 20px;
 }
 
 .page-view {
