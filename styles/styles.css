@@ -700,6 +700,22 @@ body {
   border-radius: 100%;
 }
 
+.control-input:focus + .control-mark--round {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input:hover + .control-mark--square {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:focus + .control-mark--square {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input:active + .control-mark--square {
+  background-color: rgba(255, 255, 255, 0.6);
+}
 
 .catalog-filter-prices {
   display: flex;
@@ -773,6 +789,15 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+.button-filter-submit:hover {
+  background-color: #68A2CA;
+}
+
+.button-filter-submit:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-filter-reset {
   display: block;
   border-style: none;
@@ -782,6 +807,7 @@ body {
   padding: 20px 28px;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
+  cursor: pointer;
 }
 
 .search-results {
@@ -830,6 +856,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding-left: 20px;
+  background-color: #FFFFFF;
 }
 
 .select-control:hover {
@@ -854,6 +881,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button-view:hover, .button-view:active {
+  border-color: #000000;
+}
+
+.button-view:focus {
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .button-view-selected {
@@ -962,6 +998,15 @@ body {
   background-color: #7DB54F;
 }
 
+.button-fav-current:hover {
+  background-color: #6C9E42;
+}
+
+.button-fav-current:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .rate {
   display: flex;
 }
@@ -1012,11 +1057,12 @@ body {
 }
 
 .pagination-link:hover {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #68A2CA;
 }
 
 .pagination-link:active {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-amount {
@@ -1047,6 +1093,7 @@ body {
   background-image: url("/images/selector-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #FFFFFF;
 }
 
 
