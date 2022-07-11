@@ -33,7 +33,7 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   width: 1200px;
-  box-shadow:  0 0 5px;
+  box-shadow:  0 0 15px;
 }
 
 .visually-hidden {
@@ -68,6 +68,8 @@ body {
   align-items: center;
   width: 1060px;
   margin: 0 auto;
+  padding-bottom: 5px;
+  padding-top: 2px;
 }
 
 .navigation-list {
@@ -77,6 +79,7 @@ body {
   padding: 0;
   list-style-type: none;
   align-items: center;
+  padding-left: 11px;
 }
 
 .navigation-link {
@@ -121,6 +124,8 @@ body {
 
 .menu-link {
   position: relative;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .menu-link:hover::before, .menu-link-current::before {
@@ -279,12 +284,17 @@ body {
 }
 
 .advantages-title {
-  padding: 0;
-  margin: 0;
+  margin: 0 0 30px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding: 0;
 }
+
+.advantages-title-no-pic {
+  padding-top: 20px;
+}
+
 
 .advantages-description {
   margin: 0 auto;
@@ -295,8 +305,16 @@ body {
   line-height: 21px;
 }
 
+.advantages-description-no-pic {
+  padding-bottom: 20px;
+}
+
 .advantages-icon {
   margin-bottom: 30px;
+}
+
+.advantages-icon-souvenir {
+  margin-bottom: 25px;
 }
 
 
@@ -319,6 +337,9 @@ body {
 
 .appointment-description {
   margin: 0 0 46px;
+  font-size: 22px;
+  line-height: 26px;
+  padding-bottom: 10px;
 }
 
 .hotel-search-link {
@@ -331,6 +352,9 @@ body {
   padding: 12px 15px;
   width: 574px;
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .hotel-search-link:hover {
@@ -350,13 +374,20 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   text-align: center;
-  padding-top: 94px;
+  padding-top: 70px;
   padding-bottom: 94px;
 }
 
 .newsletter-title {
   text-transform: uppercase;
   margin-bottom: 29px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.newsletter-description {
+  margin-bottom: 47px;
 }
 
 .subscription {
@@ -379,6 +410,8 @@ body {
   padding: 20px 22px 19px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .newsletter-button {
@@ -391,6 +424,9 @@ body {
   flex-grow: 1;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 .newsletter-button:hover {
@@ -411,7 +447,7 @@ body {
   align-items: center;
   width: 1060px;
   background-color: #ffffff;
-  padding: 45px 70px 35px;
+  padding: 45px 70px 35px 81px;
 }
 
 .footer-social-list {
@@ -444,7 +480,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   background-color: #FFFFFF;
   text-decoration: none;
@@ -461,7 +497,7 @@ body {
 }
 
 .htmlacademy-link {
-  margin-left: 235px;
+  margin-left: 240px;
   fill: #000000;
 }
 
@@ -479,7 +515,7 @@ body {
   background-size: cover;
   color: #FFFFFF;
   background-color: #7497bf;
-  padding: 35px 70px 71px;
+  padding: 35px 70px 50px;
 }
 
 .modal-container {
@@ -820,7 +856,7 @@ body {
   align-items: center;
   background-color: #FFFFFF;
   color: #000000;
-  margin: 55px 71px 56px 72px;
+  margin: 35px 71px 56px 72px;
   width: 1057px;
   padding: 0;
 }
