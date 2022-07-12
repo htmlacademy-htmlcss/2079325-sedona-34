@@ -789,6 +789,23 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding-left: 0;
+  padding-right: 40px;
+}
+
+.catalog-filter-price:hover {
+  border: 2px rgba(255, 255, 255, 1);
+}
+
+.catalog-filter-price:focus {
+  box-shadow: #81B3D2;
+}
+
+.catalog-filter-price:active {
+  background-color: #756257;
+}
+
+.catalog-filter-price-input-optional {
+  padding-right: 75px;
 }
 
 .catalog-filter-price-label {
@@ -820,6 +837,14 @@ body {
   border: none;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.catalog-filter-range-btn:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.catalog-filter-range-btn:active {
+  border: 2px solid rgba(131, 179, 211, 1);
 }
 
 .catalog-filter-range--min {
@@ -865,6 +890,18 @@ body {
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
+}
+
+.button-filter-reset:hover {
+  opacity: 60%;
+}
+
+.button-filter-reset:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.button-filter-reset:active {
+  opacity: 60%;
 }
 
 .search-results {
