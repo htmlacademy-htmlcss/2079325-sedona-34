@@ -764,8 +764,6 @@ body {
 
 .catalog-filter-prices {
   display: flex;
-  border: 2px solid #ffffff;
-  border-radius: 4px;
   height: 48px;
 }
 
@@ -774,10 +772,22 @@ body {
   display: flex;
   align-items: center;
   padding: 14px 17px 14px 18px;
+  position: relative;
+  border: 2px solid #F2F2F2;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .catalog-filter-price + .catalog-filter-price {
-  border-left: 2px solid #ffffff;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.catalog-filter-price:hover {
+  border-color: rgba(255,255,255,1);
 }
 
 .catalog-filter-price-input {
@@ -789,23 +799,41 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding-left: 0;
-  padding-right: 40px;
+  padding-right: 0;
 }
 
 .catalog-filter-price:hover {
-  border: 2px rgba(255, 255, 255, 1);
+  border-top-width: 2px;
+  border-top-color: rgba(255, 255, 255, 1);
+  border-right-width: 2px;
+  border-right-color: rgba(255, 255, 255, 1);
+  border-left-width: 2px;
+  border-left-color: rgba(255, 255, 255, 1);
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255, 255, 255, 1);
+  opacity: 60%;
 }
 
-.catalog-filter-price:focus {
-  box-shadow: #81B3D2;
+.catalog-filter-price-input:focus {
+  outline: none;
+}
+
+.catalog-filter-price:focus-within {
+  box-shadow: 0 0 0 1px #F2F2F2, 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
 }
 
 .catalog-filter-price:active {
   background-color: #756257;
 }
 
-.catalog-filter-price-input-optional {
-  padding-right: 75px;
+.catalog-filter-price:nth-child(1):focus-within {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.catalog-filter-price:nth-child(2):focus-within {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .catalog-filter-price-label {
@@ -897,7 +925,7 @@ body {
 }
 
 .button-filter-reset:focus {
-  border: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .button-filter-reset:active {
