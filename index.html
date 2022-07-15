@@ -70,13 +70,13 @@
               <img class="advantages-icon" src="images/icons/icon-house.svg" width="75" height="72"
                    alt="Картинка домика">
               <h4 class="advantages-title">Жильё</h4>
-              <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+              <p class="advantages-description advantages-description-grey">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="advantages-item advantages-item--33">
               <img class="advantages-icon" src="images/icons/icon-food.svg" width="74" height="70"
                    alt="Картинка бургера">
               <h4 class="advantages-title">Еда</h4>
-              <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
+              <p class="advantages-description advantages-description-grey">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
                 разочаруетесь!</p>
             </li>
             <li class="advantages-item advantages-item--33 advantages-item-light-blue">
@@ -84,7 +84,7 @@
                    height="76"
                    alt="Картинка подарка.">
               <h4 class="advantages-title">Сувениры</h4>
-              <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+              <p class="advantages-description advantages-description-grey">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </li>
           </ul>
         </li>
@@ -204,7 +204,7 @@
 
 <div class="overlay"></div>
 
-<div class="modal modal-info">
+<div class="modal modal-info visually-hidden">
   <button class="modal-close-button">
     <span class="visually-hidden">Закрыть</span>
   </button>
@@ -216,7 +216,8 @@
         <label class="first-date" for="first-date">Дата Заезда:</label>
         <div class="input-wrapper">
           <input class="info-form-field field" id="first-date" name="info-date" placeholder="27 апреля 2020">
-          <button class="calendar" type="button">Календарь</button>
+          <button class="calendar" type="button">
+            <span class="visually-hidden">Календарь</span></button>
         </div>
         <span class="first-date-comment">Мы не можем отправить вас в прошлое.</span>
       </div>
@@ -225,7 +226,9 @@
         <label class="last-date" for="last-date">Дата Выезда:</label>
         <div class="input-wrapper">
           <input class="info-form-field field" id="last-date" name="info-date" placeholder="1 сентября 2020">
-          <button class="calendar" type="button">Календарь</button>
+          <button class="calendar" type="button">
+            <span class="visually-hidden">Календарь</span>
+          </button>
         </div>
       </div>
 
@@ -234,10 +237,12 @@
           <label class="adults-amount">Взрослые:</label>
           <div class="buttons-wrapper">
             <button class="minus-btn" type="button" name="button">
-              <img src="/images/minus.svg">
+              <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+              </svg>
             </button>
 
-            <input type="text" name="name" value="2">
+            <input class="people-input" type="text" name="name" value="2">
 
             <button class="plus-btn" type="button" name="button">
               <img src="/images/plus.svg">
@@ -249,7 +254,7 @@
           <label class="children-amount">Дети:</label>
 
           <div class="tooltip">
-            <button class="tooltip_icon">i</button>
+            <button class="tooltip-icon">i</button>
             <div class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
               Дети
               до 6 лет размещаются
@@ -262,7 +267,7 @@
               <img src="/images/minus.svg">
             </button>
 
-            <input type="text" name="name" value="2">
+            <input class="people-input" type="text" name="name" value="2">
 
             <button class="plus-btn" type="button" name="button">
               <img src="/images/plus.svg">
@@ -271,7 +276,7 @@
         </div>
       </div>
 
-        <button class="button info-form-button" type="submit">Найти</button>
+      <button class="button info-form-button" type="submit">Найти</button>
     </form>
   </section>
 </div>
