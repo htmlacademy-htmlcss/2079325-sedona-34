@@ -395,9 +395,14 @@ body {
   line-height: 36px;
 }
 
-.newsletter-description {
+.newsletter-description-inner {
   margin-bottom: 47px;
   color: #333333;
+}
+
+.newsletter-description {
+  margin-bottom: 47px;
+  color: #ffffff;
 }
 
 .subscription {
@@ -533,6 +538,7 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
+  display: none;
 }
 
 .modal {
@@ -544,6 +550,11 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 30px;
+  display: none;
+}
+
+.window-visible {
+  display: block;
 }
 
 .modal-info {
@@ -635,13 +646,12 @@ body {
 }
 
 .field:focus-visible {
-  border: solid #83B3D3;
-  outline: none;
+  outline: solid #83B3D3;
 }
 
 .field:active {
   background-color: #FFFFFF;
-  border: solid #000000;
+  outline: solid #000000;
   color: #000000;
 }
 

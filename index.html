@@ -202,22 +202,24 @@
   </a>
 </footer>
 
+<!--Для подключения модального окна нудно добавить класс .window-visible -->
+
 <div class="overlay"></div>
 
 <div class="modal modal-info">
-  <button class="modal-close-button">
-    <span class="visually-hidden">Закрыть</span>
+  <button type="button" class="modal-close-button">
+    <span class="visually-hidden">Закрыть.</span>
   </button>
   <section class="modal-content">
-    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+    <h2 class="modal-title">Поиск гостиницы в Седоне.</h2>
     <form class="info-form" action="https://echo.htmlacademy.ru/" method="get">
 
       <div class="field-group">
         <label class="first-date" for="first-date">Дата Заезда:</label>
         <div class="input-wrapper">
-          <input class="info-form-field field" id="first-date" name="info-date" placeholder="27 апреля 2020">
+          <input class="info-form-field field" id="first-date" name="info-date" placeholder="27 апреля 2020" required>
           <button class="calendar" type="button">
-            <span class="visually-hidden">Календарь</span></button>
+            <span class="visually-hidden">Календарь.</span></button>
         </div>
         <span class="first-date-comment">Мы не можем отправить вас в прошлое.</span>
       </div>
@@ -225,33 +227,37 @@
       <div class="field-group">
         <label class="last-date" for="last-date">Дата Выезда:</label>
         <div class="input-wrapper">
-          <input class="info-form-field field" id="last-date" name="info-date" placeholder="1 сентября 2020">
+          <input class="info-form-field field" id="last-date" name="info-date" placeholder="1 сентября 2020" required>
           <button class="calendar" type="button">
-            <span class="visually-hidden">Календарь</span>
+            <span class="visually-hidden">Календарь.</span>
           </button>
         </div>
       </div>
 
       <div class="field-group field-group--flex">
         <div class="field-group-body field-group-body--adult">
-          <label class="adults-amount">Взрослые:</label>
+          <label class="adults-amount" for="adults" >Взрослые:</label>
           <div class="buttons-wrapper">
             <button class="minus-btn" type="button" name="button">
               <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
               </svg>
+              <span class="visually-hidden">Меньшее взрослых.</span>
             </button>
 
-            <input class="people-input" type="text" name="name" value="2">
+            <input class="people-input" id="adults" type="text" name="name" value="2" required>
 
             <button class="plus-btn" type="button" name="button">
-              <img src="/images/plus.svg">
+              <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
+              </svg>
+              <span class="visually-hidden">Больше взрослых.</span>
             </button>
           </div>
         </div>
 
         <div class="field-group-body field-group-body--children">
-          <label class="children-amount">Дети:</label>
+          <label class="children-amount" for="children">Дети:</label>
 
           <div class="tooltip">
             <button class="tooltip-icon">i</button>
@@ -264,13 +270,19 @@
 
           <div class="buttons-wrapper">
             <button class="minus-btn" type="button" name="button">
-              <img src="/images/minus.svg">
+              <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+              </svg>
+              <span class="visually-hidden">Меньше детей.</span>
             </button>
 
-            <input class="people-input" type="text" name="name" value="2">
+            <input class="people-input" id="children" type="text" name="name" value="2">
 
             <button class="plus-btn" type="button" name="button">
-              <img src="/images/plus.svg">
+              <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
+              </svg>
+              <span class="visually-hidden">Больше детей.</span>
             </button>
           </div>
         </div>
