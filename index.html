@@ -26,11 +26,13 @@
     <ul class="navigation-list navigation-user">
       <li class="navigation-item navigation-item-search">
         <a class="navigation-link" href="#"><span class="visually-hidden">Поиск.</span>
-          <img class="navigation-link search" width="19" height="19" src="images/icons/icon-search.svg" alt="Иконка поиска."></a>
+          <img class="navigation-link search" width="19" height="19" src="images/icons/icon-search.svg"
+               alt="Иконка поиска."></a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#"><span class="visually-hidden">Избранное.</span>
-          <img class="navigation-link favorite" width="19" height="17" src="images/icons/icon-favorite.svg" alt="Иконка избранное.">
+          <img class="navigation-link favorite" width="19" height="17" src="images/icons/icon-favorite.svg"
+               alt="Иконка избранное.">
           <span class="number-favorite favorite">12</span>
         </a>
       </li>
@@ -66,23 +68,23 @@
           <ul class="advantages-sublist">
             <li class="advantages-item advantages-item--33 advantages-item-light-blue">
               <img class="advantages-icon" src="images/icons/icon-house.svg" width="75" height="72"
-                   alt="Картинка домика">
+                   alt="Картинка домика" aria-hidden="true">
               <h4 class="advantages-title">Жильё</h4>
-              <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+              <p class="advantages-description advantages-description-grey">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="advantages-item advantages-item--33">
               <img class="advantages-icon" src="images/icons/icon-food.svg" width="74" height="70"
-                   alt="Картинка бургера">
+                   alt="Картинка бургера" aria-hidden="true">
               <h4 class="advantages-title">Еда</h4>
-              <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
+              <p class="advantages-description advantages-description-grey">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
                 разочаруетесь!</p>
             </li>
             <li class="advantages-item advantages-item--33 advantages-item-light-blue">
               <img class="advantages-icon advantages-icon-souvenir" src="images/icons/icon-souvenir.svg" width="64"
                    height="76"
-                   alt="Картинка подарка.">
+                   alt="Картинка подарка." aria-hidden="true">
               <h4 class="advantages-title">Сувениры</h4>
-              <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+              <p class="advantages-description advantages-description-grey">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </li>
           </ul>
         </li>
@@ -172,7 +174,8 @@
   </ul>
   <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
   <a class="htmlacademy-link" href="https://htmlacademy.ru">
-    <svg width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип HTML Академии.">
+    <svg width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg"
+         aria-label="Логотип HTML Академии.">
       <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
       <path
         d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
@@ -198,5 +201,96 @@
     </svg>
   </a>
 </footer>
+
+<!--Для подключения модального окна нудно добавить класс .window-visible -->
+
+<div class="overlay"></div>
+
+<div class="modal modal-info">
+  <button type="button" class="modal-close-button">
+    <span class="visually-hidden">Закрыть.</span>
+  </button>
+  <section class="modal-content">
+    <h2 class="modal-title">Поиск гостиницы в Седоне.</h2>
+    <form class="info-form" action="https://echo.htmlacademy.ru/" method="get">
+
+      <div class="field-group">
+        <label class="first-date" for="first-date">Дата Заезда:</label>
+        <div class="input-wrapper">
+          <input class="info-form-field field" id="first-date" name="info-date" placeholder="27 апреля 2020" required>
+          <button class="calendar" type="button">
+            <span class="visually-hidden">Календарь.</span></button>
+        </div>
+        <span class="first-date-comment">Мы не можем отправить вас в прошлое.</span>
+      </div>
+
+      <div class="field-group">
+        <label class="last-date" for="last-date">Дата Выезда:</label>
+        <div class="input-wrapper">
+          <input class="info-form-field field" id="last-date" name="info-date" placeholder="1 сентября 2020" required>
+          <button class="calendar" type="button">
+            <span class="visually-hidden">Календарь.</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="field-group field-group--flex">
+        <div class="field-group-body field-group-body--adult">
+          <label class="adults-amount" for="adults" >Взрослые:</label>
+          <div class="buttons-wrapper">
+            <button class="minus-btn" type="button" name="button">
+              <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+              </svg>
+              <span class="visually-hidden">Меньшее взрослых.</span>
+            </button>
+
+            <input class="people-input" id="adults" type="text" name="name" value="2" required>
+
+            <button class="plus-btn" type="button" name="button">
+              <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
+              </svg>
+              <span class="visually-hidden">Больше взрослых.</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="field-group-body field-group-body--children">
+          <label class="children-amount" for="children">Дети:</label>
+
+          <div class="tooltip">
+            <button class="tooltip-icon">i</button>
+            <div class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+              Дети
+              до 6 лет размещаются
+              бесплатно.
+            </div>
+          </div>
+
+          <div class="buttons-wrapper">
+            <button class="minus-btn" type="button" name="button">
+              <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+              </svg>
+              <span class="visually-hidden">Меньше детей.</span>
+            </button>
+
+            <input class="people-input" id="children" type="text" name="name" value="2">
+
+            <button class="plus-btn" type="button" name="button">
+              <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
+              </svg>
+              <span class="visually-hidden">Больше детей.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="button info-form-button" type="submit">Найти</button>
+    </form>
+  </section>
+</div>
 </body>
 </html>
