@@ -619,6 +619,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 30px;
   display: none;
+  padding-top: 71px;
 }
 
 .window-visible {
@@ -627,7 +628,7 @@ body {
 
 .modal-info {
   width: 715px;
-  margin-top: -50px;
+  margin-top: -49px;
 }
 
 .modal-close-button {
@@ -666,11 +667,12 @@ body {
 }
 
 .field-group +.field-group {
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .input-wrapper {
   position: relative;
+  margin-top: -2px;
 }
 
 .first-date,
@@ -682,7 +684,7 @@ body {
 }
 
 .last-date {
-  margin-bottom: 28px;
+  margin-bottom: 35px;
 }
 
 .calendar {
