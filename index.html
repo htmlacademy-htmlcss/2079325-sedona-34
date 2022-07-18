@@ -25,14 +25,10 @@
     </ul>
     <ul class="navigation-list navigation-user">
       <li class="navigation-item navigation-item-search">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск.</span>
-          <img class="navigation-link search" width="19" height="19" src="images/icons/icon-search.svg"
-               alt="Иконка поиска."></a>
+        <a class="navigation-link navigation-link-search" href="#"><span class="visually-hidden">Поиск.</span></a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное.</span>
-          <img class="navigation-link favorite" width="19" height="17" src="images/icons/icon-favorite.svg"
-               alt="Иконка избранное.">
+        <a class="navigation-link navigation-link-favorite" href="#"><span class="visually-hidden">Избранное.</span>
           <span class="number-favorite favorite">12</span>
         </a>
       </li>
@@ -67,23 +63,16 @@
           </div>
           <ul class="advantages-sublist">
             <li class="advantages-item advantages-item--33 advantages-item-light-blue">
-              <img class="advantages-icon" src="images/icons/icon-house.svg" width="75" height="72"
-                   alt="Картинка домика" aria-hidden="true">
-              <h4 class="advantages-title">Жильё</h4>
+              <h4 class="advantages-title advantages-title-house">Жильё</h4>
               <p class="advantages-description advantages-description-grey">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="advantages-item advantages-item--33">
-              <img class="advantages-icon" src="images/icons/icon-food.svg" width="74" height="70"
-                   alt="Картинка бургера" aria-hidden="true">
-              <h4 class="advantages-title">Еда</h4>
+              <h4 class="advantages-title advantages-title-food">Еда</h4>
               <p class="advantages-description advantages-description-grey">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
                 разочаруетесь!</p>
             </li>
             <li class="advantages-item advantages-item--33 advantages-item-light-blue">
-              <img class="advantages-icon advantages-icon-souvenir" src="images/icons/icon-souvenir.svg" width="64"
-                   height="76"
-                   alt="Картинка подарка." aria-hidden="true">
-              <h4 class="advantages-title">Сувениры</h4>
+              <h4 class="advantages-title advantages-title-souvenir">Сувениры</h4>
               <p class="advantages-description advantages-description-grey">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </li>
           </ul>
@@ -204,9 +193,9 @@
 
 <!--Для подключения модального окна нужно добавить класс .window-visible -->
 
-<div class="overlay window-visible"></div>
+<div class="overlay"></div>
 
-<div class="modal modal-info window-visible">
+<div class="modal modal-info">
   <button type="button" class="modal-close-button">
     <span class="visually-hidden">Закрыть.</span>
   </button>
