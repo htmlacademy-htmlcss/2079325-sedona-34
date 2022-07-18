@@ -202,16 +202,16 @@
   </a>
 </footer>
 
-<!--Для подключения модального окна нудно добавить класс .window-visible -->
+<!--Для подключения модального окна нужно добавить класс .window-visible -->
 
-<div class="overlay"></div>
+<div class="overlay window-visible"></div>
 
-<div class="modal modal-info">
+<div class="modal modal-info window-visible">
   <button type="button" class="modal-close-button">
     <span class="visually-hidden">Закрыть.</span>
   </button>
   <section class="modal-content">
-    <h2 class="modal-title">Поиск гостиницы в Седоне.</h2>
+    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
     <form class="info-form" action="https://echo.htmlacademy.ru/" method="get">
 
       <div class="field-group">
@@ -231,6 +231,7 @@
           <button class="calendar" type="button">
             <span class="visually-hidden">Календарь.</span>
           </button>
+          <span class="last-date-comment">На эти даты есть свободные номера. Пока есть.</span>
         </div>
       </div>
 
